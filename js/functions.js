@@ -101,7 +101,9 @@
         var tip = prompt("What percentage is your tip?")
         var total = prompt("What is your total bill?")
 
-        console.log(calculateTip(tip, total));
+            console.log(typeof tip);
+
+            console.log(calculateTip(tip, total));
 
         /**
          * TODO:
@@ -119,7 +121,7 @@
          */
 
         function applyDiscount(price, discount){
-                return price-(price * discount)
+                return price-(price * discount);
         }
                 var price = 100
                 var discount = .2
