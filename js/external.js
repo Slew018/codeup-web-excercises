@@ -8,3 +8,7 @@ if (userInput.toLowerCase() === "green"){
 }else{
     alert("You Chose: " + userInput);
 }
+
+console.log("Hello from external JavaScript");
+
+

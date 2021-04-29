@@ -57,3 +57,11 @@ let zoo = [
 
 
 console.log(typeof zoo);
+
+
+
+
+function lowerCase(str) {
+    if
+}
+
