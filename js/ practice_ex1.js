@@ -1,8 +1,15 @@
-"use strict";
+// "use strict";
+//
+// function trim(input){
+//     return input.replaceAll(' ', '');
+//
+// }
+//
+// console.log(trim('This is no time to be a hero, you go first'));
 
-function trim(input){
-    return input.replaceAll(' ', '');
 
+const last = function(input){
+    return input.split('').pop();
 }
-.
-console.log(trim('This is no time to be a hero, you go first'));
+
+console.log(last('words'));
