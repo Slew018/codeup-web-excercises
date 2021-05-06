@@ -26,36 +26,36 @@ function analyzeColorSwitch(color) {
     }
 }
 
-// console.log(analyzeColorSwitch("orange"));
-//
-// function calculateTotal(lucky, total){
-//     switch(lucky) {
-//         case 1:
-//             alert("Your number is 1!");
-//             alert("Price before discount is: " + total);
-//             alert("Price after discount is: " + (.01 * total));
-//             break;
-//         case 2:
-//             alert("Your number is 2!");
-//             alert("Price before discount is: " + total);
-//             alert("Price after discount is: " + (.25 * total));
-//             break;
-//         case 3:
-//             alert("Your number is 3!");
-//             alert("Price before discount is: " + total);
-//             alert("Price after discount is: " + (.35 * total));
-//             break;
-//         case 4:
-//             alert("Your number is 4!");
-//             alert("Price before discount is: " + total);
-//             alert("Price after discount is: " + (.5 * total));
-//             break;
-//         case 5:
-//             alert("Your number is 5!");
-//             alert("Price before discount is: " + total);
-//             alert("Price after discount is: " + (1 * total));
-//             break;
-//     }
-// }
+console.log(analyzeColorSwitch("orange"));
+
+function calculateTotal(lucky, total){
+    switch(lucky) {
+        case 1:
+            alert("Your number is 1!");
+            alert("Price before discount is: " + total);
+            alert("Price after discount is: " + (.01 * total));
+            break;
+        case 2:
+            alert("Your number is 2!");
+            alert("Price before discount is: " + total);
+            alert("Price after discount is: " + (.25 * total));
+            break;
+        case 3:
+            alert("Your number is 3!");
+            alert("Price before discount is: " + total);
+            alert("Price after discount is: " + (.35 * total));
+            break;
+        case 4:
+            alert("Your number is 4!");
+            alert("Price before discount is: " + total);
+            alert("Price after discount is: " + (.5 * total));
+            break;
+        case 5:
+            alert("Your number is 5!");
+            alert("Price before discount is: " + total);
+            alert("Price after discount is: " + (1 * total));
+            break;
+    }
+}
 
 
