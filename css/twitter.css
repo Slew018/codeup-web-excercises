@@ -77,11 +77,13 @@ a {
     width: 25%;
 }
 .media{
-    width: 100%;
+    /*width: 100%;*/
     background-color: var(--light-bg);
     padding: .5em;
     border-bottom: 1px;
     border-bottom-color: var(--separator-color);
+    /*overflow: scroll;*/
+    /*display: inline-block;*/
 }
 .media-image{
     width: 50px;
@@ -98,7 +100,7 @@ a {
 }
 .who-to-follow{
     margin: .5em;
-    width: 25%;
+    display: inline-block;
 }
 .btn {
     border: 1px solid var(--main-link-color);
