@@ -61,7 +61,7 @@ console.log(typeof zoo);
 
 
 
-function lowerCase(str) {
-    if
-}
+// function lowerCase(str) {
+//     if
+// }
 
