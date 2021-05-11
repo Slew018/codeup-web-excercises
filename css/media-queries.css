@@ -1,60 +1,106 @@
-* {
-    box-sizing: border-box;
+
+/*Mobile Query*/
+
+/*from the width of "min-width" until the width of "max-width", then apply these styles:*/
+@media screen and (min-width: 101px) and (max-width: 400px){
+    body {
+        background-color: blue;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    div a {
+        background-color: lightblue;
+        border: gray;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 80%;
+        margin: auto;
+    }
+    img {
+        width: 339px;
+        margin: auto;
+    }
+    .main {
+        display: inline-block;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .sub-section {
+        display: inline-block;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    li {
+        margin: .5em;
+        padding: .5em;
+        border: white 2px;
+        background-color: lightgray;
+        text-align: center;
+    }
+    ul {
+        padding: 0;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+        footer {
+            padding-top: 20em;
+        }
+
+}
+/*Desktop Query*/
+/*when the screen size is between 501px and 1200 px apply these changes*/
+/*@media screen and (min-width: 501px) and (max-width: 1200px){*/
+/*@media screen and (min-width: 601px){*/
+@media screen and (min-width: 501px) and (max-width: 1200px){
+    body {
+        background-color: red;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        padding-left: 2em;
+        padding-right: 2em;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    .header-img {
+        width: 890px;
+        height: 385px;
+        margin: auto;
+    }
+    .main {
+        display: inline-block;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        width: 50%;
+    }
+    .sub-section {
+        display: inline-block;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        padding: 1em;
+        width: 40%;
+    }
+    li {
+        margin: .5em;
+    }
+
+    .hidden-on-desktop{
+        display: none;
+    }
+
 }
 
-/*Mobile */
-@media screen and (min-width:576px) {
-
-}
-/*Mobile*/
-
-body {
-
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    padding: 5em;
-    justify-content: flex-end;
-}
-
-ul{
-    /*display: flex;*/
-    /*justify-content: flex-end;*/
-}
-
-nav a{
-
-}
-
-.header-img {
-    width: 890px;
-    height: 385px;
-    margin: auto;
-}
-.main {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    margin: auto;
-}
-.sub-section {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
-    padding: 1em;
-}
-
-nav ul li:nth-child(1) {
-}
-
-nav ul li:nth-child(2) {
-}
-
-nav ul li:nth-child(3) {
-}
-
-nav ul li:nth-child(4) {
-}
 
