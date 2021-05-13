@@ -2,7 +2,7 @@
 /*Mobile Query*/
 
 /*from the width of "min-width" until the width of "max-width", then apply these styles:*/
-@media screen and (min-width: 101px) and (max-width: 400px){
+@media screen and (min-width: 101px) and (max-width: 500px){
     body {
         background-color: blue;
     }
@@ -67,6 +67,12 @@
     body {
         background-color: red;
     }
+
+    h1{
+        display: inline-block;
+        width: 60%;
+    }
+
     .nav-links {
         list-style: none;
         display: flex;
@@ -74,6 +80,7 @@
         padding-right: 2em;
         justify-content: flex-end;
         flex-wrap: wrap;
+        width: 40%;
     }
     .header-img {
         width: 890px;
@@ -84,7 +91,7 @@
         display: inline-block;
         flex-flow: column wrap;
         justify-content: flex-start;
-        width: 50%;
+        width: 60%;
     }
     .sub-section {
         display: inline-block;
