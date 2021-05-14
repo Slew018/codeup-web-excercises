@@ -1,0 +1,10 @@
+.jumbotron{
+    background-image: url(/codeup-web-exercises/html/pizza.png);
+    background-repeat: no-repeat;
+}
+
+h1{
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.53);
+    justify-content: center;
+}
