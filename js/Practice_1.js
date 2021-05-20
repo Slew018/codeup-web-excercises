@@ -12,3 +12,9 @@
 //     return x % y;
 // }
 // console.log(remainder(9,2))
+
+
+const secondToLast = function (arr = [1, 2, 3, 4]) {
+        return typeof arr[arr.length - 2]
+}
+console.log(secondToLast());

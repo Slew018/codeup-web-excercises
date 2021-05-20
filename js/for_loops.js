@@ -78,12 +78,12 @@ if(72 % 12 == 0) {
 
 
 
-function showMultiplicationTable(num){
-    console.log("multiplication table for ");
-    for(let i = 1; i <= 10; i++){
-        console.log(`${num} * ${i} === ${num * i}`);
-    }
-}
+// function showMultiplicationTable(num){
+//     console.log("multiplication table for ");
+//     for(let i = 1; i <= 10; i++){
+//         console.log(`${num} * ${i} === ${num * i}`);
+//     }
+// }
 // showMultiplicationTable(7);
 //
 // for(let i = 1; i <= 10; i++){
@@ -118,7 +118,7 @@ function showMultiplicationTable(num){
 
 
 
-
-for(let i = 100; i <= 5; i -= 5){
-    console.log(i);
-}
+//
+// for(let i = 100; i <= 5; i -= 5){
+//     console.log(i);
+// }
