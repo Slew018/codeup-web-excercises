@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
 </head>
 <body>
 
 <h1 id="main-header">Hello World!</h1>
 <ul>
-    <li data-dbid="1">Item 1</li>
-    <li data-dbid="2">Item 2</li>
-    <li data-dbid="3">Item 3</li>
-    <li data-dbid="4">Item 4</li>
-    <li data-dbid="5">Item 5</li>
+    <li class="odd list-one-item" data-dbid="1">Item 1</li>
+    <li class="even list-one-item" data-dbid="2">Item 2</li>
+    <li class="odd list-two-item" data-dbid="3">Item 3</li>
+    <li class="even list-two-item" data-dbid="4">Item 4</li>
+    <li class="odd list-three-item" data-dbid="5">Item 5</li>
 </ul>
 <h2 id="sub-header">Hello Again.</h2>
 <p class="sub-paragraph">
@@ -24,38 +27,62 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+    <button type="button"  class="btn btn-info btn-lg">Header</button>
+    <button type="button"  class="btn btn-info btn-lg">Blue</button>
+    <button type="button"  class="btn btn-info btn-lg">Grey</button>
+    <button type="button"  class="btn btn-info btn-lg">Blue2</button>
 
-<script>
+    <script>
     (function() {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
-        var mainHeader = document.getElementById('main-header');
-
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        document.getElementById('main-header').innerHTML = "JavaScript is Cool"
+
+        let btn1 = document.getElementById('btn1');
+        btn1.addEventListener('click' header1)
+
+        function header1 {
+            let mainHeader = document.getElementById('main-header');
+            mainHeader.innerHTML = "JavaScript is cool"
+        }
+
         // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = document.getElementById('sub-header');
+
+        let subHeader = document.getElementById('sub-header');
 
         // TODO: Set the text color of subHeader to blue
         document.getElementById('sub-header').style.color = "blue";
 
         // TODO: Uncomment the next line and get all list items
-        var listItems = document.getElementById('li');
+        let listItems = document.getElementsByTagName('li');
         for(let i = 0; i < listItems.length; i++){
             let dbId = listItems[i].getAttribute("data-dbid");
             console.log(dbId);
         }
 
         // TODO: Set text color on every other list item to grey
+        let oddElements = document.getElementsByClassName('odd');
+        for(let i = 0; i < oddElements.length; i++){
+            oddElements[i].style.color = "grey";
+        }
 
         // TODO: Set text color of li with dbid = 1 to blue
-
+        (oddElements[0]).style.color = "blue"
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        // var subParagraphs = ;
+        let subParagraphs = document.getElementsByClassName('sub-paragraph')[0];
+
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        subParagraphs.innerText = "Mission Accomplished";
+
+
+
     })();
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossOrigin="anonymous"></script>
 </script>
 </body>
 </html>
