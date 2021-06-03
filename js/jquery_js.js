@@ -5,11 +5,11 @@ $('span').hide();
 $('.show-me').show();
 
 $(document).ready(function(){
- $('.orange').css('background-color', 'orange').fadeToggle(1000).fadeToggle(1000).fadeToggle(1000).show();
+ $('.orange').css('background-color', 'orange').fadeToggle(1000).fadeToggle(1000).fadeToggle(1000).fadeToggle(1000).fadeToggle(1000).show();
 });
 
 window.onload = function(){
- $('.pink').css('background-color', 'pink').fadeToggle(1000).fadeToggle(1000).fadeToggle(1000).show();
+ $('.pink').css('background-color', 'pink').fadeToggle(1000).fadeToggle(1000).fadeToggle(1000).fadeToggle(1000).fadeToggle(1000).show();
 };
 
 
@@ -23,6 +23,7 @@ window.onload = function(){
 // });
 
  $('img').css({'width': 'auto', 'height': '100%'});
+
 
 
 
