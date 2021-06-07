@@ -70,6 +70,20 @@
     });
 
 
+    // let hoverIn = function () {
+    //     let attributeValue = $(this).attr("data-attribute");
+    //     $(".card-title").text(attributeValue);
+    // }
+    // let hoverOut = function () {
+    //     $(this).find(".card-title").text("Card")
+    // }
+    // $(".col-md-3").hover(hoverIn, hoverOut)
+
+
+    $('.list-group-item').click(function(){
+        $(this).css({'background-color': 'purple', 'text-transform': 'uppercase',});
+        // $(this).toggleClass()
+    });
 
 
 

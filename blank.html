@@ -24,6 +24,15 @@
     <!--         TODO: HINT -> Be sure to not mix-and-match Vanilla JS DOM and jQuery. If you do use both, understand they work with different object types-->
     <div class="container" id="post-container">
 
+      let hoverIn = function () {
+      let attributeValue = $(this).attr("data-attribute");
+      $(".card-title").text(attributeValue);
+      }
+      let hoverOut = function () {
+      $(this).find(".card-title").text("Card")
+      }
+      $(".col-md-3").hover(hoverIn, hoverOut)
+
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
