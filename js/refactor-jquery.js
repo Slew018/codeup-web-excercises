@@ -14,13 +14,13 @@
 
 
     //Focus on this
-    //make sure the DOM is loaded first
-    // document.addEventListener("DOMContentLoaded", function() {
-    //     addListeners();
-    // });
-    $('document').ready(function (){
-
+    // make sure the DOM is loaded first
+    document.addEventListener("DOMContentLoaded", function() {
+        addListeners();
     });
+    // $('document').ready(function (){
+    //
+    // });
     //parent method for adding all listeners
     function addListeners(){
         //get the elements to add listener and change image
@@ -44,4 +44,33 @@
     function changeImage(card, imgPath){
         card.setAttribute('src', imgPath);
     }
+
+    $(document).ready(function(){
+        $('#submitBtn').click(function(){
+            $('#override-bootstrap').css('background', 'red');
+        })
+    });
+
+    $(document).ready(function (){
+        $('p').click(function (){
+            $(this).css('background', 'red');
+        })
+    });
+
+    $(document).ready(function (){
+        $('#resetBtn').click(function(){
+            location.reload();
+        })
+    });
+
+    $(document).ready(function (){
+        $('#main-title').click(function(){
+            $(this).css('font-size', '400%');
+        })
+    });
+
+
+
+
+
 })();

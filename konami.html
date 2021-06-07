@@ -12,33 +12,34 @@
 
         <h1>Konami Code</h1>
 
+        <script src="./js/jquery-2.2.4.js"></script>
         <script>
             "use strict";
 
-           //a key map of allwed keys
             let allow = {
                 37: 'left',
                 38: 'up',
                 39: 'right',
                 40: 'down',
                 65: 'a',
-                66: 'b'
+                66: 'b',
+                13: 'enter'
             };
-            //position the user has reached
             let cursor = 0;
+
             // ASCII codes keys
             const konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
 
-            $(document).on('keyup', function(e){
+
+            $(document).keyup(function(e){
                 console.log(e.keyCode);
-                //value of key code from the key map
+
                 let key = allow[e.keyCode];
-                //value of the required key
+
                 let sequence = konami[cursor];
-                //move to the next key in the sequence
+
                 if (key === sequence) {
                     cursor++;
-                //if entered correctly, activate
                     if (cursor === konami.length){
                         activate();
                         cursor = 0;
@@ -49,7 +50,7 @@
             });
 
             function activate(){
-                $(this).prepend('<img src="html/giphy.gif" alt="bamboozled"/>');
+                $(this).css('background-color', 'purple');
             }
 
 
@@ -58,7 +59,6 @@
 
 
 
-        <script src="./js/jquery-2.2.4.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
                 integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
