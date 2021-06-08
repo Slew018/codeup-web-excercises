@@ -86,5 +86,8 @@
     });
 
 
+    // TODO: When the user clicks #submitBtn, log to the console the values of #first, #last, and #handleField
+//  -> If any of the fields are empty, alert the user to fill the empty control (be sure to tell them which control was empty)
+
 
 })();
